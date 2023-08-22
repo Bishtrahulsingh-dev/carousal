@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.carousal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right,.left{
+    width: 25px;
+    font-size: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin:0 10px;
+    cursor: pointer;
+}
+
+.images{
+    width: 450px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.slider{
+    width: 450px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-wrap: nowrap;
+}
+
+.carousalimg{
+    min-width: 450px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
